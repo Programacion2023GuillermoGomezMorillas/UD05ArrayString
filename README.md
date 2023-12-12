@@ -29,5 +29,5 @@ Los que estan mal son:
 #### Ejercicio 4
 
 Sus valores serían:
-array[] = {0, 0, 0, 0, 0 ,0 ,0}
+array[] = {71, 0, 0, 0, 23 ,0 ,42}
 
