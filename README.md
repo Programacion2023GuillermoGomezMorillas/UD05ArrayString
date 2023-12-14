@@ -7,7 +7,7 @@
 2. Es de tipo entero (int).
 3. Devuelve el valor 103.
 4. Usando el array[3]
-5. int array[] = {0,1,2,3,4,5,6,7,8,9}
+5. int[] array = {0,1,2,3,4,5,6,7,8,9};
 6. array[9] = 2
 7. Devolvería 52.
 8. Devolveria el el valor de la séptima posición pero sumado uno. Devolvería 10.
@@ -29,5 +29,35 @@ Los que estan mal son:
 #### Ejercicio 4
 
 Sus valores serían:
-array[] = {71, 0, 0, 0, 23 ,0 ,42}
+array[] = {71, 0, 0, 0, 0 ,23 ,42}
 
+#### Ejercicio 5
+
+array [] = {0.21, 4.31, 9.28, 0}
+
+"posición 3 valor 0"
+"posición 2 valor 9.28"
+"posición 1 valor 4.31"
+
+#### Ejercicio 6
+
+array[3] == 84.0 
+
+#### Ejercicio 7
+
+1. char[] dam = {'d', 'a', 'm'};
+2. Tiene tamaño 3.
+3. Tiene el valor m.
+4. No tiene valor, no existe esa posición
+
+#### Ejercicio 8
+
+char[] dam = new char[3];
+dam[0] = 'd';
+dam[1] = 'a';
+dam[2] = 'm';
+
+#### Ejercicio 9
+
+
+dataB:45.0, 23.0, 0.0, 45.0, 0.0, 12.0
