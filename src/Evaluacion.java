@@ -71,25 +71,161 @@ public class Evaluacion {
             return listaAlumnos;
         }
     }
-
-    public double media(double[] listasNotas) {
-        int comprobante = comprobarNotas(listasNotas);
-        double media = 0;
-        if (comprobante == -1) {
-            System.out.println("Sin notas por el momento");
-        } else {
-            for (int i = 0; i < listasNotas.length; i++) {
-                media += listasNotas[i];
-            }
-        }
-        return media;
-    }
-
     public int comprobarNotas(double[] compruebaLista) {
         if (compruebaLista == null) {
             return -1;
         } else {
             return 0;
+        }
+    }
+
+    public double media() {
+        int comprobante = comprobarNotas(listaNotas);
+        double media = 0;
+        if (comprobante == -1) {
+            System.out.println("Sin notas por el momento");
+        } else {
+            for (int i = 0; i < listaNotas.length; i++) {
+                media += listaNotas[i];
+            }
+        }
+        return media;
+    }
+
+    public double minimo() {
+        int comprobante = comprobarNotas(listaNotas);
+        double minimo = 10;
+        if (comprobante == -1) {
+            System.out.println("Sin notas por el momento");
+        } else {
+            for (int i = 0; i < listaNotas.length; i++){
+                if (listaNotas[i] < minimo){
+                    minimo = listaNotas[i];
+                }
+            }
+        }
+        return minimo;
+    }
+    public double maximo() {
+        int comprobante = comprobarNotas(listaNotas);
+        double maximo = 0;
+        if (comprobante == -1) {
+            System.out.println("Sin notas por el momento");
+        } else {
+            for (int i = 0; i < listaNotas.length; i++){
+                if (listaNotas[i] > maximo){
+                    maximo = listaNotas[i];
+                }
+            }
+        }
+        return maximo;
+    }
+    public int totalSuspensos() {
+        int comprobante = comprobarNotas(listaNotas);
+        int cont = 0;
+        if (comprobante == -1) {
+            System.out.println("Sin notas por el momento");
+        } else {
+            for (int i = 0; i < listaNotas.length; i++){
+                if (listaNotas[i] < 5){
+                    cont++;
+                }
+            }
+        }
+       return cont;
+    }
+    public int totalAprobados() {
+        int comprobante = comprobarNotas(listaNotas);
+        int cont = 0;
+        if (comprobante == -1) {
+            System.out.println("Sin notas por el momento");
+        } else {
+            for (int i = 0; i < listaNotas.length; i++){
+                if (listaNotas[i] > 4){
+                    cont++;
+                }
+            }
+        }
+        return cont;
+    }
+    public void cambiarNota(double nota, int alumno){
+        alumno = alumno-1;
+        if (alumno > listaNotas.length || alumno < 0){
+            System.out.println("No existe ese alumno");
+        }
+        else {
+            listaNotas[alumno] = nota;
+        }
+    }
+    public double mejorAlumno(){
+        double mejor=0;
+        for (int i=0; i<listaNotas.length; i++)
+            if (listaNotas[i] == maximo()){
+                mejor = i;
+            }
+        return mejor;
+    }
+    public double peorAlumno(){
+        double peor=0;
+        for (int i=0; i<listaNotas.length; i++)
+            if (listaNotas[i] == minimo()){
+                peor = i;
+            }
+        return peor;
+    }
+
+    public double notaAlumno(int indiceAlumno){
+        indiceAlumno = indiceAlumno-1;
+        if (indiceAlumno > listaNotas.length || indiceAlumno < 0){
+            return -1;
+        }
+        return listaNotas[indiceAlumno];
+    }
+    public int[] dameAprobados(){
+        int aprobados = totalAprobados();
+        int[] alumnosAprobados = new int[aprobados];
+    if (aprobados == 0){
+        System.out.println("No hay aprobados");
+    }else {
+        for (int i=0 ; i<listaNotas.length ; i++){
+            int j = 0;
+            if (listaNotas[i]>4){
+                listaNotas[i]= alumnosAprobados[j];
+                j++;
+            }
+        }
+    }
+        System.out.println(Arrays.toString(alumnosAprobados));
+    return alumnosAprobados;
+    }
+
+    public int[] dameSuspensos(){
+        int suspensos = totalSuspensos();
+        int[] alumnosSuspensos = new int[suspensos];
+        if (suspensos == 0){
+            System.out.println("No hay aprobados");
+        }else {
+            for (int i=0 ; i<listaNotas.length ; i++){
+                int j = 0;
+                if (listaNotas[i]>4){
+                    listaNotas[i]= alumnosSuspensos[j];
+                    j++;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(alumnosSuspensos));
+        return alumnosSuspensos;
+    }
+    public double[] ordenar(){
+        double[] listaOrdenada;
+        listaOrdenada = Arrays.copyOf(listaNotas, 0);
+        Arrays.sort(listaOrdenada);
+        return listaOrdenada;
+    }
+    public void analizaGrupo(){
+        double[] listaAnalizar = ordenar();
+        for (int i =0 ; i<listaAnalizar.length ; i++){
+
         }
     }
 }
