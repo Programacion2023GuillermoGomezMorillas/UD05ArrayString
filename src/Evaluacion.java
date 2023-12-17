@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Evaluacion {
 
-    String nombreAsignatura;
-    double[] listaNotas;
+    private String nombreAsignatura;
+    private double[] listaNotas;
     Scanner sc = new Scanner(System.in);
 
 
