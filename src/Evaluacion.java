@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Evaluacion {
@@ -30,11 +31,11 @@ public class Evaluacion {
                     System.out.println(listaNotas[k]);
                 }
             }
-        }
-        else {
+        } else {
             crearLista(totalAlumnos);
         }
     }
+
     /**
      * Método para introducir las notas en el array
      */
@@ -51,13 +52,47 @@ public class Evaluacion {
 
     }
 
+    /**
+     * @return Devuelve el string con el listado de los alumnos y sus notas
+     */
     @Override
+
     public String toString() {
-        System.out.println("Asignatura: " + nombreAsignatura);
-        for (int j=0; j< listaNotas.length;j++) {
-            return "\nAlumno 1: " + listaNotas[0] + "\nAlumno 2: " + listaNotas[0] +
+        String listaAlumnos = "";
+        if (listaNotas == null) {
+
+            return "Sin notas por el momento";
+        } else {
+            System.out.println("Asignatura: " + nombreAsignatura);
+
+            for (int j = 0, i = 1; j < listaNotas.length; j++, i++) {
+                listaAlumnos += "\nAlumno " + i + ": " + listaNotas[j] + "\n";
+            }
+            return listaAlumnos;
+        }
+    }
+
+    public double media(double[] listasNotas) {
+        int comprobante = comprobarNotas(listasNotas);
+        double media = 0;
+        if (comprobante == -1) {
+            System.out.println("Sin notas por el momento");
+        } else {
+            for (int i = 0; i < listasNotas.length; i++) {
+                media += listasNotas[i];
+            }
+        }
+        return media;
+    }
+
+    public int comprobarNotas(double[] compruebaLista) {
+        if (compruebaLista == null) {
+            return -1;
+        } else {
+            return 0;
         }
     }
 }
+
 
 
