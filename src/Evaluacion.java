@@ -224,8 +224,34 @@ public class Evaluacion {
     }
     public void analizaGrupo(){
         double[] listaAnalizar = ordenar();
+        int cont1=0, cont2=0, cont3=0, cont4=0;
+        int probabilidad = (int) (listaAnalizar.length * 0.66);
         for (int i =0 ; i<listaAnalizar.length ; i++){
-
+            if (listaNotas[i]>7) {
+                cont1++;
+            }
+            if (listaNotas[i]>=5 && listaNotas[i]<=7){
+                cont2++;
+            }
+            if (listaNotas[i]<5){
+                cont3++;
+            }
+            cont4++;
+        }
+        int mayorSiete =(int) (cont1 * 0.666666);
+        int mayorCinco =(int) (cont2 * 0.666666);
+        int menorCinco =(int) (cont3 * 0.666666);
+        if (cont1>mayorSiete){
+            System.out.println("VAMOS FENOMENTAL");
+        }
+        else if (cont2>mayorCinco){
+            System.out.println("VAMOS FENOMENTAL");
+        }
+        else if (cont2>menorCinco){
+            System.out.println("VAMOS FENOMENTAL");
+        }
+        else {
+            System.out.println("HACER SUBGRUPOS CON TAREAS DE DIFERENTE DIFICULAS");
         }
     }
 }
