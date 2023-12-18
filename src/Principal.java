@@ -5,11 +5,14 @@ public class Principal {
     public static void main(String[] args) {
         Principal principal = new Principal();
         Scanner sc = new Scanner(System.in);
-        Evaluacion evaluacion = new Evaluacion();
         int opcion = menu();
         switch (opcion){
             case 1:
                 principal.comprobarNotas();
+            case 2:
+                principal.mostrarNotas();
+            case 3:
+                principal.mostrarMedia();
         }
     }
     public static int menu(){
@@ -23,5 +26,6 @@ public class Principal {
     }
     public void comprobarNotas(){
         Evaluacion evaluacion = new Evaluacion("Programación", new double[]{3, 2, 4, 6, 8, 3, 2, 5, 7, 10, 9, 6, 4});
+
     }
     }
