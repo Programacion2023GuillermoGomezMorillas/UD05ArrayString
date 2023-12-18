@@ -218,7 +218,7 @@ public class Evaluacion {
     }
     public double[] ordenar(){
         double[] listaOrdenada;
-        listaOrdenada = Arrays.copyOf(listaNotas, 0);
+        listaOrdenada = Arrays.copyOf(listaNotas, listaNotas.length);
         Arrays.sort(listaOrdenada);
         return listaOrdenada;
     }
