@@ -28,7 +28,7 @@ public class Evaluacion {
 
             } else if (eleccion.equalsIgnoreCase("n")) {
                 for (int k = 0; k < totalAlumnos; k++) {
-                    System.out.println(listaNotas[k]);
+                    System.out.print(listaNotas[k] + ", ");
                 }
             }
         } else {
@@ -46,10 +46,9 @@ public class Evaluacion {
             do {
                 System.out.println("Introduzca la nota entre 0 y 10 (Ej 8,5)");
                 nota = sc.nextDouble();
+                listaNotas[j] = nota;
             } while (0 < nota && nota > 10);
-            System.out.print(listaNotas[j]);
         }
-
     }
 
     /**
@@ -64,13 +63,13 @@ public class Evaluacion {
             return "Sin notas por el momento";
         } else {
             System.out.println("Asignatura: " + nombreAsignatura);
-
             for (int j = 0, i = 1; j < listaNotas.length; j++, i++) {
-                listaAlumnos += "\nAlumno " + i + ": " + listaNotas[j] + "\n";
-            }
-            return listaAlumnos;
+                System.out.print("Alumno " + i + ": " + listaNotas[j] + "\n");
         }
+        }
+        return listaAlumnos;
     }
+
     public int comprobarNotas(double[] compruebaLista) {
         if (compruebaLista == null) {
             return -1;
@@ -89,7 +88,7 @@ public class Evaluacion {
                 media += listaNotas[i];
             }
         }
-        return media;
+        return (media/ listaNotas.length);
     }
 
     public double minimo() {
