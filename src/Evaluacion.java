@@ -186,10 +186,10 @@ public class Evaluacion {
     if (aprobados == 0){
         System.out.println("No hay aprobados");
     }else {
+        int j = 0;
         for (int i=0 ; i<listaNotas.length ; i++){
-            int j = 0;
             if (listaNotas[i]>4){
-                listaNotas[i]= alumnosAprobados[j];
+                alumnosAprobados[j] = i+1;
                 j++;
             }
         }
@@ -204,10 +204,10 @@ public class Evaluacion {
         if (suspensos == 0){
             System.out.println("No hay aprobados");
         }else {
+            int j = 0;
             for (int i=0 ; i<listaNotas.length ; i++){
-                int j = 0;
-                if (listaNotas[i]>4){
-                    listaNotas[i]= alumnosSuspensos[j];
+                if (listaNotas[i]<5){
+                    alumnosSuspensos[j] = i + 1;
                     j++;
                 }
             }

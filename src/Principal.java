@@ -17,6 +17,12 @@ public class Principal {
                 principal.mostrarMaximoMinimo();
             case 5:
                 principal.suspensosAprobados();
+            case 6:
+                principal.mejorPeor();
+            case 7:
+                principal.cambiarNota();
+            case 8:
+                principal.dameAprobadosSuspendidos();
         }
     }
 
@@ -26,7 +32,7 @@ public class Principal {
         do {
             System.out.println("1- Leer Notas\n2-Mostrar Notas\n3-Mostrar la Median\n4-Mostrar Maximo y Minimo\n5-Mostrar suspensos y aprobados");
             opc = sc.nextInt();
-        } while (opc < 1 || opc > 6);
+        } while (opc < 1 || opc > 8);
         return opc;
     }
 
@@ -55,5 +61,26 @@ public class Principal {
         Evaluacion evaluacion = new Evaluacion("Programación", new double[]{10, 3, 4, 6, 5});
         System.out.println("Hay " + evaluacion.totalAprobados() + " aprobados");
         System.out.println("Hay " + evaluacion.totalSuspensos() + " suspendidos");
+    }
+    public void mejorPeor(){
+        Evaluacion evaluacion = new Evaluacion("Programación", new double[]{10, 3, 4, 6, 5});
+        System.out.println(evaluacion.peorAlumno());
+        System.out.println(evaluacion.mejorAlumno());
+    }
+    public void cambiarNota(){
+        Scanner sc = new Scanner(System.in);
+        Evaluacion evaluacion = new Evaluacion("Programación", new double[]{10, 3, 4, 6, 5});
+        System.out.println("¿Que alumno quieres cambiar?");
+        int alumno = sc.nextInt();
+        alumno = alumno-1;
+        evaluacion.notaAlumno(alumno);
+        System.out.println("¿Que nota quieres ponerle?");
+        int nota = sc.nextInt();
+        evaluacion.cambiarNota(8, alumno);
+    }
+    public void dameAprobadosSuspendidos(){
+        Evaluacion evaluacion = new Evaluacion("Programación", new double[]{10, 3, 4, 6, 5});
+        System.out.println(evaluacion.dameAprobados());
+        System.out.println(evaluacion.dameSuspensos());
     }
 }
