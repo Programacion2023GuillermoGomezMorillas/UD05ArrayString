@@ -223,6 +223,7 @@ public class Evaluacion {
     }
     public void analizaGrupo(){
         double[] listaAnalizar = ordenar();
+        double dosTercios = 2/3 * listaNotas.length;
         int cont1=0, cont2=0, cont3=0, cont4=0;
         int probabilidad = (int) (listaAnalizar.length * 0.66);
         for (int i =0 ; i<listaAnalizar.length ; i++){
@@ -237,17 +238,14 @@ public class Evaluacion {
             }
             cont4++;
         }
-        int mayorSiete =(int) (cont1 * 0.666666);
-        int mayorCinco =(int) (cont2 * 0.666666);
-        int menorCinco =(int) (cont3 * 0.666666);
-        if (cont1>mayorSiete){
+        if (cont1>dosTercios){
             System.out.println("VAMOS FENOMENTAL");
         }
-        else if (cont2>mayorCinco){
-            System.out.println("VAMOS FENOMENTAL");
+        else if (cont2>dosTercios){
+            System.out.println("REPASAR EJERCICIOS CON DIFICULTAD");
         }
-        else if (cont2>menorCinco){
-            System.out.println("VAMOS FENOMENTAL");
+        else if (cont2>dosTercios){
+            System.out.println("VAMOS MAL...REPETIR EL TEMARIO");
         }
         else {
             System.out.println("HACER SUBGRUPOS CON TAREAS DE DIFERENTE DIFICULAS");

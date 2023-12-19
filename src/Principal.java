@@ -23,6 +23,10 @@ public class Principal {
                 principal.cambiarNota();
             case 8:
                 principal.dameAprobadosSuspendidos();
+            case 9:
+                principal.ordernarLista();
+            case 10:
+                principal.analizarGrupo();
         }
     }
 
@@ -32,7 +36,7 @@ public class Principal {
         do {
             System.out.println("1- Leer Notas\n2-Mostrar Notas\n3-Mostrar la Median\n4-Mostrar Maximo y Minimo\n5-Mostrar suspensos y aprobados");
             opc = sc.nextInt();
-        } while (opc < 1 || opc > 8);
+        } while (opc < 1 || opc > 10);
         return opc;
     }
 
@@ -82,5 +86,15 @@ public class Principal {
         Evaluacion evaluacion = new Evaluacion("Programación", new double[]{10, 3, 4, 6, 5});
         System.out.println(evaluacion.dameAprobados());
         System.out.println(evaluacion.dameSuspensos());
+    }
+    public void ordernarLista(){
+        Evaluacion evaluacion = new Evaluacion("Programación", new double[]{10, 3, 4, 6, 5});
+        double[] listaOrdenada = evaluacion.ordenar();
+        System.out.println(Arrays.toString(listaOrdenada));
+    }
+    public void analizarGrupo(){
+        Evaluacion evaluacion = new Evaluacion("Programación", new double[]{0, 3, 4, 6, 5});
+        evaluacion.analizaGrupo();
+
     }
 }
