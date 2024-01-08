@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * Se trata de una clase que contiene las notas de un grupo y puden ser consultadas, visualizadas y modificadas
  */
-public class Evaluacion {
+public class Asignatura {
     //Declaracion de variables
     private String nombreAsignatura;
     private double[] listaNotas;
@@ -14,7 +14,7 @@ public class Evaluacion {
      * Constructor para el nombre de la asignatura
      * @param nombreAsignatura
      */
-    public Evaluacion(String nombreAsignatura) {
+    public Asignatura(String nombreAsignatura) {
         this.nombreAsignatura = nombreAsignatura;
     }
 
@@ -23,7 +23,7 @@ public class Evaluacion {
      * @param nombreAsignatura
      * @param listaNotas
      */
-    public Evaluacion(String nombreAsignatura, double[] listaNotas) {
+    public Asignatura(String nombreAsignatura, double[] listaNotas) {
         this.nombreAsignatura = nombreAsignatura;
         this.listaNotas = listaNotas;
     }
