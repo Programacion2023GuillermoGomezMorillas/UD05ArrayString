@@ -43,4 +43,9 @@ public class Grupo {
     public void mostrarAsignaturas(){
         System.out.println(Arrays.toString(asignaturas));
     }
+    @Override
+    public String toString() {
+
+        return "Alumno          " + asignaturas[i] + "      " + asignaturas[i] + "      " + asignaturas[i]
+    }
 }
