@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="continuacion">
+    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="Continuaciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Grupo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grupo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +195,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704817036589</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="leerAlumnos">
+      <option name="closed" value="true" />
+      <created>1704817752447</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1704817752447</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Continuaciones">
+      <option name="closed" value="true" />
+      <created>1704817841252</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1704817841252</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +240,9 @@
     <MESSAGE value="inicio Tarea2" />
     <MESSAGE value="inicioTarea2" />
     <MESSAGE value="continuacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="continuacion" />
+    <MESSAGE value="leerAlumnos" />
+    <MESSAGE value="Continuaciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Continuaciones" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/UDO5ArrayString$Principal.ic" NAME="Principal Coverage Results" MODIFIED="1703004708299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

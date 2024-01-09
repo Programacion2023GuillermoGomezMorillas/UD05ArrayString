@@ -362,6 +362,10 @@ public class Asignatura {
             System.out.println("HACER SUBGRUPOS CON TAREAS DE DIFERENTE DIFICULAS");
         }
     }
+
+    public String getNombreAsignatura() {
+        return nombreAsignatura;
+    }
 }
 
 

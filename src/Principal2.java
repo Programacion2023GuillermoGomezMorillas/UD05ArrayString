@@ -4,51 +4,30 @@ import java.util.Scanner;
 
 public class Principal2 {
     public static void main(String[] args) {
-        Principal2 principal = new Principal2();
+        Grupo grupo = new Grupo("DAM1k", 3, 2);
         Scanner sc = new Scanner(System.in);
-        int opcion = menu();
-        switch (opcion) {
-            case 1:
-                principal.leerAlumnos();
-                break;
-            case 2:
-                principal.mostrarNotas();
-                break;
-            case 3:
-                principal.mostrarMedia();
-                break;
-            case 4:
-                principal.mostrarMaximoMinimo();
-                break;
-            case 5:
-                principal.suspensosAprobados();
-                break;
-            case 6:
-                principal.mejorPeor();
-                break;
-            case 7:
-                principal.cambiarNota();
-                break;
-            case 8:
-                principal.dameAprobadosSuspendidos();
-                break;
-            case 9:
-                principal.ordernarLista();
-                break;
-            case 10:
-                principal.analizarGrupo();
-                break;
-            case 11:
-                break;
-            case 12:
-                break;
-            case 13:
-                break;
-        }
+        int opcion = 1;
+        do {
+            opcion = menu();
+            switch (opcion) {
+                case 1:
+                    grupo.leerAlumnos();
+                    break;
+                case 2:
+                    grupo.mostrarAlumnos();
+                    break;
+                case 3:
+                    grupo.leerAsignatura();
+                    break;
+                case 13:
+                    break;
+            }
+        }while (opcion != 10);
     }
 
     /**
      * Menu de navegacion
+     *
      * @return
      */
     public static int menu() {
@@ -60,17 +39,6 @@ public class Principal2 {
         } while (opc < 1 || opc > 13);
         return opc;
     }
-    public void leerAlumnos(){
-        Grupo grupo = new Grupo("DAM1k",3,2);
-        Scanner sc = new Scanner(System.in);
-        String grupoAlumnos;
-        for (int i=0, k=1 ; i<grupo.totalAlumnos ; i++, k++) {
-            System.out.println("Alumnos " + k);
-            grupoAlumnos = sc.nextLine();
-            grupo.alumnos[i] = grupoAlumnos;
 
-        }
-        Arrays.sort(grupo.alumnos);
-    }
 }
 
