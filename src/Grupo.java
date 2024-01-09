@@ -1,9 +1,9 @@
 public class Grupo {
-    private String nombreGrupo;
-    private String[] alumnos;
-    private Asignatura[] asignatura;
-    private int totalAlumnos;
-    private int totalAsignatura;
+    String nombreGrupo;
+    String[] alumnos;
+    Asignatura[] asignatura;
+    int totalAlumnos;
+    int totalAsignatura;
 
     public Grupo(String nombreGrupo, int totalAlumnos, int totalAsignatura) {
         this.nombreGrupo = "DAM1k";
@@ -12,4 +12,6 @@ public class Grupo {
         this.alumnos = new String[totalAlumnos];
         this.asignatura = new Asignatura[totalAsignatura];
     }
+
+
 }
