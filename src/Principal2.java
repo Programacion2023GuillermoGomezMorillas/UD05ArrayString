@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Principal2 {
@@ -66,7 +68,9 @@ public class Principal2 {
             System.out.println("Alumnos " + k);
             grupoAlumnos = sc.nextLine();
             grupo.alumnos[i] = grupoAlumnos;
+
         }
+        Arrays.sort(grupo.alumnos);
     }
 }
 

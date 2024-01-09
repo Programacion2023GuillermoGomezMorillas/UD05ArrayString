@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="inicioTarea2">
+    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="continuacion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Grupo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grupo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704737513219</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="continuacion">
+      <option name="closed" value="true" />
+      <created>1704817036589</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704817036589</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,7 +210,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="prueba1" />
-    <MESSAGE value="continuacion" />
     <MESSAGE value="Readme" />
     <MESSAGE value="Pruebas" />
     <MESSAGE value="media" />
@@ -216,7 +222,8 @@
     <MESSAGE value="Fin Evaluacion2" />
     <MESSAGE value="inicio Tarea2" />
     <MESSAGE value="inicioTarea2" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicioTarea2" />
+    <MESSAGE value="continuacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="continuacion" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/UDO5ArrayString$Principal.ic" NAME="Principal Coverage Results" MODIFIED="1703004708299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
