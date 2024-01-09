@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Principal2 {
     public static void main(String[] args) {
-        Principal principal = new Principal();
+        Principal2 principal = new Principal2();
         Scanner sc = new Scanner(System.in);
         int opcion = menu();
         switch (opcion) {
             case 1:
-                principal.comprobarNotas();
+                principal.leerAlumnos();
                 break;
             case 2:
                 principal.mostrarNotas();
