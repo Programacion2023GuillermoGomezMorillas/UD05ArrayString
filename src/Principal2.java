@@ -19,6 +19,8 @@ public class Principal2 {
                 case 3:
                     grupo.leerAsignatura();
                     break;
+                case 4:
+                    System.out.println(grupo.toString());
                 case 13:
                     break;
             }

@@ -9,7 +9,7 @@ public class Grupo {
     private int totalAsignatura;
 
     public Grupo(String nombreGrupo, int totalAlumnos, int totalAsignatura) {
-        this.nombreGrupo = "DAM1k";
+        this.nombreGrupo = nombreGrupo;
         this.totalAlumnos = totalAlumnos;
         this.totalAsignatura = totalAsignatura;
         this.alumnos = new String[totalAlumnos];
@@ -45,10 +45,10 @@ public class Grupo {
     }
     @Override
     public String toString() {
-        String s = "Alumno" + String.format("%-30s%-1515.f2", asignaturas[i]);
-        for (int i=0 ; i<totalAlumnos ; i++) {
-            s = "Alumno" + String.format("%-30s%-1515.f2", asignaturas[i]);
-            s = s +  String.format("%-30s%-1515.f2", alumnos[i],  );
+        String a = "";
+        String s = "Alumno";
+        for (int i=0; i<totalAsignatura ; i++){
+            s = s +  asignaturas[i];
         }
         return s;
     }
