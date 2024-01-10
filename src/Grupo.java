@@ -45,7 +45,11 @@ public class Grupo {
     }
     @Override
     public String toString() {
-
-        return "Alumno          " + asignaturas[i] + "      " + asignaturas[i] + "      " + asignaturas[i]
+        String s = "Alumno" + String.format("%-30s%-1515.f2", asignaturas[i]);
+        for (int i=0 ; i<totalAlumnos ; i++) {
+            s = "Alumno" + String.format("%-30s%-1515.f2", asignaturas[i]);
+            s = s +  String.format("%-30s%-1515.f2", alumnos[i],  );
+        }
+        return s;
     }
 }
