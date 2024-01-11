@@ -55,12 +55,22 @@ public class Grupo {
         for (int k=0 ; k<totalAlumnos ; k++){
             a = a + alumnos[k];
             for (int j=0 ; j<totalAsignatura ; j++) {
-                a = a + String.format("%30s", asignaturas[k].getListaNotas());
+                a = a + String.format("%30s", asignaturas[k].notaAlumno(j));
             }
             a = a + "\n";
         }
 
         return s + a;
     }
-
-}
+    public void mostrarMedia(){
+        String s="";
+        for (int i = 0;i<totalAsignatura;i++) {
+            s = s + String.format("%10s", asignaturas[i].getNombreAsignatura());
+        }
+        s = s + "\n";
+        System.out.println("\n");
+        for (int j=0;j<totalAlumnos;j++){
+            s = s + String.format("%10s", asignaturas[j].notaAlumno(j));
+        }
+        }
+    }
