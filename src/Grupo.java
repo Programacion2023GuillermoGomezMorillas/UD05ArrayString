@@ -52,13 +52,13 @@ public class Grupo {
         }
         s = s + "\n";
 
-        for (int k=0 ; k<totalAlumnos ; k++){
-            a = a + alumnos[k];
+        for (int k=1 ; k<=totalAlumnos ; k++){
+            a = a + alumnos[k-1];
             for (int j=0 ; j<totalAsignatura ; j++) {
-                a = a + String.format("%30s", asignaturas[k].notaAlumno(j));
+                a = a + String.format("%30s", asignaturas[j].notaAlumno(k));
             }
             a = a + "\n";
-        }
+       }
 
         return s + a;
     }
