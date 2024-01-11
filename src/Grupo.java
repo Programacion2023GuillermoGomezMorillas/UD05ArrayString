@@ -45,11 +45,22 @@ public class Grupo {
     }
     @Override
     public String toString() {
-        String a = "";
+        String a ="";
         String s = "Alumno";
         for (int i=0; i<totalAsignatura ; i++){
-            s = s +  asignaturas[i];
+            s = s +  String.format("%30s",asignaturas[i].getNombreAsignatura());
         }
-        return s;
+        s = s + "\n";
+
+        for (int k=0 ; k<totalAlumnos ; k++){
+            a = a + alumnos[k];
+            for (int j=0 ; j<totalAsignatura ; j++) {
+                a = a + String.format("%30s", asignaturas[k].getListaNotas());
+            }
+            a = a + "\n";
+        }
+
+        return s + a;
     }
+
 }

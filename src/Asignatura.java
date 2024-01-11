@@ -72,6 +72,7 @@ public class Asignatura {
     /**
      * @return Devuelve el string con el listado de los alumnos y sus notas
      */
+    /*
     @Override
 
     public String toString() {
@@ -87,7 +88,7 @@ public class Asignatura {
         }
         return listaAlumnos;
     }
-
+*/
     /**
      * Se introduce una lista y se comprueba si existe o no existe la lista, si no existe devuelve -1
      * @param compruebaLista
@@ -196,7 +197,7 @@ public class Asignatura {
         } else {
             //Recorre el array para ver cual es el numero total de aprobados
             for (int i = 0; i < listaNotas.length; i++){
-                if (listaNotas[i] > 4){
+                if (listaNotas[i] >= 5){
                     cont++;
                 }
             }
@@ -258,7 +259,7 @@ public class Asignatura {
     public double notaAlumno(int indiceAlumno){
         indiceAlumno = indiceAlumno-1;
         //Si esta por encima o por debajo del tamaño del array devuelve -1
-        if (indiceAlumno > listaNotas.length || indiceAlumno < 0){
+        if (indiceAlumno > listaNotas.length-1 || indiceAlumno < 0){
             return -1;
         }
         return listaNotas[indiceAlumno];
@@ -365,6 +366,10 @@ public class Asignatura {
 
     public String getNombreAsignatura() {
         return nombreAsignatura;
+    }
+
+    public double[] getListaNotas() {
+        return listaNotas;
     }
 }
 
