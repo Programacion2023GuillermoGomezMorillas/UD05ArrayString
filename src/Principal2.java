@@ -21,10 +21,14 @@ public class Principal2 {
                     break;
                 case 4:
                     System.out.println(grupo.toString());
+                    break;
+                case 5:
+                    System.out.println(grupo.mostrarMedia());
+                    break;
                 case 13:
                     break;
             }
-        }while (opcion != 10);
+        }while (opcion != 13);
     }
 
     /**

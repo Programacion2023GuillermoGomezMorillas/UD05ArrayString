@@ -48,29 +48,31 @@ public class Grupo {
         String a ="";
         String s = "Alumno";
         for (int i=0; i<totalAsignatura ; i++){
-            s = s +  String.format("%30s",asignaturas[i].getNombreAsignatura());
+            s = s +  String.format("%30.20s",asignaturas[i].getNombreAsignatura());
         }
         s = s + "\n";
 
         for (int k=1 ; k<=totalAlumnos ; k++){
-            a = a + alumnos[k-1];
+            a = a + String.format("%-30s",alumnos[k-1]);
             for (int j=0 ; j<totalAsignatura ; j++) {
-                a = a + String.format("%30s", asignaturas[j].notaAlumno(k));
+                a = a + String.format("%-30s", asignaturas[j].notaAlumno(k));
             }
             a = a + "\n";
        }
 
         return s + a;
     }
-    public void mostrarMedia(){
-        String s="";
+    public String mostrarMedia(){
+        String s="", a="";
+
         for (int i = 0;i<totalAsignatura;i++) {
-            s = s + String.format("%10s", asignaturas[i].getNombreAsignatura());
+            s = s + String.format("%-25s", asignaturas[i].getNombreAsignatura());
         }
         s = s + "\n";
-        System.out.println("\n");
-        for (int j=0;j<totalAlumnos;j++){
-            s = s + String.format("%10s", asignaturas[j].notaAlumno(j));
+        for (int j=0, k=1;j<totalAsignatura;j++, k++){
+            a = a + String.format("%-25s", asignaturas[j].media());
+
         }
+        return s + a;
         }
     }
