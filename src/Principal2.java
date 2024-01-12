@@ -27,8 +27,10 @@ public class Principal2 {
                     break;
                 case 6:
                     System.out.println(grupo.dameAsignaturaMinima());
+                    break;
                 case 7:
                     System.out.println(grupo.dameAsignaturaMaxima());
+                    break;
                 case 13:
                     break;
             }
