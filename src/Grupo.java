@@ -75,4 +75,26 @@ public class Grupo {
         }
         return s + a;
         }
+        public String dameAsignaturaMinima() {
+            String s = "";
+            for (int j = 0; j < totalAsignatura; j++) {
+                for (int k = 1; k < totalAlumnos; k++) {
+                    if (asignaturas[j].notaAlumno(k) <= 10) {
+                        s = asignaturas[j].getNombreAsignatura();
+                    }
+                }
+            }
+                return s;
+        }
+    public String dameAsignaturaMaxima(){
+        String s = "";
+        for (int j = 0; j < totalAsignatura; j++) {
+            for (int k = 1; k < totalAlumnos; k++) {
+                if (asignaturas[j].notaAlumno(k) >= 0) {
+                    s = asignaturas[j].getNombreAsignatura();
+                }
+            }
+        }
+        return s;
+    }
     }

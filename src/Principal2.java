@@ -25,6 +25,10 @@ public class Principal2 {
                 case 5:
                     System.out.println(grupo.mostrarMedia());
                     break;
+                case 6:
+                    System.out.println(grupo.dameAsignaturaMinima());
+                case 7:
+                    System.out.println(grupo.dameAsignaturaMaxima());
                 case 13:
                     break;
             }

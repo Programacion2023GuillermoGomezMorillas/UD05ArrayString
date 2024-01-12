@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="ToString">
+    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="mostrarMedias">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Grupo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grupo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal2.java" afterDir="false" />
@@ -267,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705001460497</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="mostrarMedias">
+      <option name="closed" value="true" />
+      <created>1705073770421</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1705073770421</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,7 +311,8 @@
     <MESSAGE value="Pruebas toString3" />
     <MESSAGE value="Pruebas" />
     <MESSAGE value="ToString" />
-    <option name="LAST_COMMIT_MESSAGE" value="ToString" />
+    <MESSAGE value="mostrarMedias" />
+    <option name="LAST_COMMIT_MESSAGE" value="mostrarMedias" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -312,6 +321,15 @@
           <properties class="java.util.UnknownFormatConversionException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Grupo.java</url>
+          <line>77</line>
+          <properties class="Grupo" method="dameAsignaturaMinima">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
