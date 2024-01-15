@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="Pruebas">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Grupo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grupo.java" afterDir="false" />
-    </list>
+    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="Pruebasss" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -298,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705331838211</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Pruebasss">
+      <option name="closed" value="true" />
+      <created>1705341844263</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1705341844263</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -337,7 +342,8 @@
     <MESSAGE value="dameAsignaturaMaxima" />
     <MESSAGE value="dameAlumnoSuspensos" />
     <MESSAGE value="Pruebas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pruebas" />
+    <MESSAGE value="Pruebasss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pruebasss" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

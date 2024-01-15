@@ -206,10 +206,16 @@ public class Grupo {
         }
         return suspensosTotales;
     }
+
+    /**
+     *
+     * @return Muestra el alumno con la mejor nota
+     */
     public String dameMejorAlumnoMedia(){
         double mediaAlumnos = 0;
         double media=0;
         String alumno="";
+        //Bucle para ver comparar medias de los alumnos
         for (int i=0 ; i<totalAsignatura ; i++) {
             mediaAlumnos = dameAlumnoMedia(i);
             if(mediaAlumnos >= media)
@@ -218,6 +224,11 @@ public class Grupo {
         }
         return alumno;
     }
+
+    /**
+     *
+     * @return Devuelve una tabla con las asignaturas y la media de los alumnos
+     */
     public String muestraMediaAlumnos(){
         String a ="";
         String s = "Alumno";
@@ -241,6 +252,8 @@ public class Grupo {
         return s + a;
     }
     public String muestraRepetidores(){
+
+
 
     }
     }
