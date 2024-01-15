@@ -77,10 +77,13 @@ public class Grupo {
         }
         public String dameAsignaturaMinima() {
             String s = "";
+            int nota=10;
             for (int j = 0; j < totalAsignatura; j++) {
                 for (int k = 1; k < totalAlumnos; k++) {
-                    if (asignaturas[j].notaAlumno(k) <= 10) {
+                    if (asignaturas[j].notaAlumno(k) <= nota) {
+                        nota = (int) asignaturas[j].notaAlumno(k);
                         s = asignaturas[j].getNombreAsignatura();
+                        System.out.println(s);
                     }
                 }
             }
@@ -88,9 +91,11 @@ public class Grupo {
         }
     public String dameAsignaturaMaxima(){
         String s = "";
+        int nota=0;
         for (int j = 0; j < totalAsignatura; j++) {
             for (int k = 1; k < totalAlumnos; k++) {
-                if (asignaturas[j].notaAlumno(k) >= 0) {
+                if (asignaturas[j].notaAlumno(k) >= nota) {
+                    nota = (int) asignaturas[j].notaAlumno(k);
                     s = asignaturas[j].getNombreAsignatura();
                 }
             }
