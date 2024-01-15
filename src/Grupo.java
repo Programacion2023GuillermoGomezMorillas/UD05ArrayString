@@ -174,6 +174,12 @@ public class Grupo {
         //Suma total de las notas entre el total de los alumnos para la media
         return (suma/totalAlumnos);
     }
+
+    /**
+     *
+     * @param indice
+     * @return Devuelve la media de un alumno en concreto
+     */
     public double dameAlumnoMedia(int indice) {
         double suma=0;
         //Recorre las notas de la asignatura introducida y las va sumando
@@ -183,13 +189,36 @@ public class Grupo {
         //Suma total de las notas entre el total de los alumnos para la media
         return (suma/totalAlumnos);
     }
+
+    /**
+     *
+     * @param indice
+     * @return Devuelve los supensos totales de un alumno en concreto
+     */
     public int dameAlumnoSuspensos(int indice){
         int suspensosTotales = 0;
+        //Bucle para que recorra las notas del alumno introducido
         for (int i=0; i<totalAsignatura ; i++){
             if (asignaturas[i].notaAlumno(indice)<5){
+                //Cuenta los suspensos de ese alumno
                 suspensosTotales++;
             }
         }
         return suspensosTotales;
+    }
+    public String dameMejorAlumnoMedia(){
+        double mediaAlumnos = 0;
+        double media=0;
+        String alumno="";
+        for (int i=0 ; i<totalAsignatura ; i++) {
+            mediaAlumnos = dameAlumnoMedia(i);
+            if(mediaAlumnos >= media)
+                media = mediaAlumnos;
+                alumno = asignaturas[i].getNombreAsignatura();
+        }
+        return alumno;
+    }
+    public double[] muestraMediaAlumnos(){
+
     }
     }
