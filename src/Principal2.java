@@ -15,6 +15,7 @@ public class Principal2 {
                     break;
                 case 2:
                     grupo.mostrarAlumnos();
+                    grupo.mostrarAsignaturas();
                     break;
                 case 3:
                     grupo.leerAsignatura();
@@ -30,6 +31,21 @@ public class Principal2 {
                     break;
                 case 7:
                     System.out.println(grupo.dameAsignaturaMaxima());
+                    break;
+                case 8:
+                    System.out.println("De qué asignatura quieres ver la media?");
+                    int indice = sc.nextInt();
+                    System.out.println(grupo.dameMediaAsignatura(indice));
+                    break;
+                case 9:
+                    System.out.println("De qué alumno quieres ver la media?");
+                    int indiceAlumno = sc.nextInt();
+                    System.out.println(grupo.dameAlumnoMedia(indiceAlumno));
+                    break;
+                case 10:
+                    System.out.println("De que alumno quieres saber los suspensos que tiene?");
+                    indiceAlumno = sc.nextInt();
+                    System.out.println(grupo.dameAlumnoSuspensos(indiceAlumno));
                     break;
                 case 13:
                     break;
