@@ -166,7 +166,6 @@ public class Grupo {
      * @return Devuelve la media de una asignatura
      */
     public double dameMediaAsignatura(int indice){
-        Scanner sc = new Scanner(System.in);
         double suma=0;
         //Recorre las notas de la asignatura introducida y las va sumando
         for (int i=1 ; i<=totalAlumnos ; i++){
@@ -176,7 +175,6 @@ public class Grupo {
         return (suma/totalAlumnos);
     }
     public double dameAlumnoMedia(int indice) {
-        Scanner sc = new Scanner(System.in);
         double suma=0;
         //Recorre las notas de la asignatura introducida y las va sumando
         for (int i=0 ; i<totalAlumnos ; i++){
@@ -186,6 +184,12 @@ public class Grupo {
         return (suma/totalAlumnos);
     }
     public int dameAlumnoSuspensos(int indice){
-
+        int suspensosTotales = 0;
+        for (int i=0; i<totalAsignatura ; i++){
+            if (asignaturas[i].notaAlumno(indice)<5){
+                suspensosTotales++;
+            }
+        }
+        return suspensosTotales;
     }
     }

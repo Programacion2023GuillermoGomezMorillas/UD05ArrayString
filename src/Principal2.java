@@ -47,6 +47,8 @@ public class Principal2 {
                     indiceAlumno = sc.nextInt();
                     System.out.println(grupo.dameAlumnoSuspensos(indiceAlumno));
                     break;
+                case 11:
+                    break;
                 case 13:
                     break;
             }
