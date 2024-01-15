@@ -218,7 +218,29 @@ public class Grupo {
         }
         return alumno;
     }
-    public double[] muestraMediaAlumnos(){
+    public String muestraMediaAlumnos(){
+        String a ="";
+        String s = "Alumno";
+        //Bucle para la primera fila de la tabla
+        for (int i=0; i<totalAsignatura ; i++){
+            s = s +  String.format("%30.20s",asignaturas[i].getNombreAsignatura());
+        }
+        //Para bajar a la siguiente linea
+        s = s + "\n";
+        //Bucle para el nombre de los alumnos
+        for (int k=1 ; k<=totalAlumnos ; k++){
+            a = a + String.format("%-30s",alumnos[k-1]);
+            //Bucle para las notas de los alumnos en una asignatura concreta
+            for (int j=0 ; j<totalAsignatura ; j++) {
+                a = a + String.format("%-30s", dameAlumnoMedia(k));
+            }
+            //Para bajar a la siguiente linea
+            a = a + "\n";
+        }
+        //Devuelve las dos cadenas de texto juntas
+        return s + a;
+    }
+    public String muestraRepetidores(){
 
     }
     }
