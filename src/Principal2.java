@@ -14,14 +14,13 @@ public class Principal2 {
                     grupo.leerAlumnos();
                     break;
                 case 2:
-                    grupo.mostrarAlumnos();
-                    grupo.mostrarAsignaturas();
-                    break;
-                case 3:
                     grupo.leerAsignatura();
                     break;
-                case 4:
+                case 3:
                     System.out.println(grupo.toString());
+                    break;
+                case 4:
+                    grupo.mostrarAsignaturas();
                     break;
                 case 5:
                     System.out.println(grupo.mostrarMedia());
@@ -38,17 +37,16 @@ public class Principal2 {
                     System.out.println(grupo.dameMediaAsignatura(indice));
                     break;
                 case 9:
-                    System.out.println("De qué alumno quieres ver la media?");
-                    int indiceAlumno = sc.nextInt();
-                    System.out.println(grupo.dameAlumnoMedia(indiceAlumno));
+                    System.out.println(grupo.muestraMediaAlumnos());
                     break;
                 case 10:
-                    System.out.println("De que alumno quieres saber los suspensos que tiene?");
-                    indiceAlumno = sc.nextInt();
-                    System.out.println(grupo.dameAlumnoSuspensos(indiceAlumno));
+                    grupo.muestraRepetidores();
                     break;
                 case 11:
+                    grupo.analizaAsignaturas();
                     break;
+                case 12:
+                    grupo.analizaCurso();
                 case 13:
                     break;
             }
