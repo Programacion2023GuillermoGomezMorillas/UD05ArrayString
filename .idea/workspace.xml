@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="masPruebasss">
+    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="nif">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tarea3String.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tarea3String.java" afterDir="false" />
@@ -363,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705427303219</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="nif">
+      <option name="closed" value="true" />
+      <created>1705431176479</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1705431176479</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -378,7 +386,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Continuacion4" />
     <MESSAGE value="Continuacion5" />
     <MESSAGE value="Fin Evaluacion" />
     <MESSAGE value="Fin Evaluacion2" />
@@ -403,7 +410,8 @@
     <MESSAGE value="Pruebas" />
     <MESSAGE value="masPruebas" />
     <MESSAGE value="masPruebasss" />
-    <option name="LAST_COMMIT_MESSAGE" value="masPruebasss" />
+    <MESSAGE value="nif" />
+    <option name="LAST_COMMIT_MESSAGE" value="nif" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,9 +4,8 @@ public class Principal3 {
     public static void main(String[] args) {
         Tarea3String dni = new Tarea3String();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Dime tu NIF");
+        System.out.println("Dime una frase" );
         String nif = sc.nextLine();
-        System.out.println(dni.esCorrectoNIF(nif));
-
+        dni.quitaVocales(nif);
     }
 }
