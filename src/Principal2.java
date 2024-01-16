@@ -4,8 +4,14 @@ import java.util.Scanner;
 
 public class Principal2 {
     public static void main(String[] args) {
-        Grupo grupo = new Grupo("DAM1k", 3, 2);
         Scanner sc = new Scanner(System.in);
+        System.out.println("Cuantos alumnos son?");
+        int alumnos = sc.nextInt();
+        System.out.println("Cuantas asignaturas tienen?");
+        int asignaturas = sc.nextInt();
+        System.out.println("Como se llama el grupo?");
+        String nombreGrupo = sc.nextLine();
+        Grupo grupo = new Grupo(nombreGrupo, alumnos, asignaturas);
         int opcion = 1;
         do {
             opcion = menu();
