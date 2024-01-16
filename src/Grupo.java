@@ -251,9 +251,13 @@ public class Grupo {
         //Devuelve las dos cadenas de texto juntas
         return s + a;
     }
-    public String muestraRepetidores(){
+    public void muestraRepetidores(){
+        String alumnoSuspensos = "";
+        for (int i=1 ; i<=totalAlumnos ; i++){
+        if (dameAlumnoSuspensos(i)>=2){
+            System.out.println("El alumno " + alumnos[i] + " va a repetir el curso");
+        }
 
-
-
+        }
     }
-    }
+}
