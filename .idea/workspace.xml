@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="Punto 24">
+    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="muestraRepetidores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Asignatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Asignatura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Grupo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grupo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -314,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705342542755</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="muestraRepetidores">
+      <option name="closed" value="true" />
+      <created>1705418213823</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1705418213823</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,7 +338,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Readme" />
     <MESSAGE value="media" />
     <MESSAGE value=" analizaGrupo" />
     <MESSAGE value="Continuacion2" />
@@ -354,7 +362,8 @@
     <MESSAGE value="Pruebas" />
     <MESSAGE value="Pruebasss" />
     <MESSAGE value="Punto 24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Punto 24" />
+    <MESSAGE value="muestraRepetidores" />
+    <option name="LAST_COMMIT_MESSAGE" value="muestraRepetidores" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

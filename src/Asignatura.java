@@ -368,9 +368,6 @@ public class Asignatura {
         return nombreAsignatura;
     }
 
-    public double[] getListaNotas() {
-        return listaNotas;
-    }
 }
 
 

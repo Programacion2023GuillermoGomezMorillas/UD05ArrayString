@@ -252,7 +252,6 @@ public class Grupo {
         return s + a;
     }
     public void muestraRepetidores(){
-        String alumnoSuspensos = "";
         for (int i=1 ; i<=totalAlumnos ; i++){
         if (dameAlumnoSuspensos(i)>=2){
             System.out.println("El alumno " + alumnos[i] + " va a repetir el curso");
@@ -260,4 +259,15 @@ public class Grupo {
 
         }
     }
+    public void analizaAsignaturas() {
+        for (int i = 0; i < totalAsignatura; i++) {
+            asignaturas[i].analizaGrupo();
+        }
+    }
+    public void analizaCurso(){
+        for (int i = 0; i < totalAsignatura; i++) {
+            asignaturas[i].analizaGrupo();
+        }
+    }
+
 }
