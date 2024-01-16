@@ -1,15 +1,28 @@
-public class Tarea3String {
+import java.util.Locale;
 
+public class Tarea3String {
+    /**
+     *
+     * @param nif
+     * @return
+     */
     public boolean esCorrectoNIF(String nif) {
         boolean nifCorrecto = false;
         String letrasNif = "TRWAGMYFPDXBNJZSQVHLCKE";
-        int soloNumeroNif = Integer.parseInt(nif.substring(0,7));
+        //Convierto el los 8 numeros en un int
+        int soloNumeroNif = Integer.parseInt(nif.substring(0,8));
+        //Guardo solo la letra en una variable
         String letra = nif.substring(8);
+        //Guardo el resto del DNI en una variable
         int moduloNif = soloNumeroNif % 23;
-        if (nif.length() == 9 && nif.substring(0, 7).matches("[0-9]*") && nif.substring(8).matches("[A-Z]*") && nif.substring(8).equals(String.valueOf(letrasNif.charAt(moduloNif)))) {
+        //Primero compruebo el largo de la cadena de texto, segundo compruebo que los numeros son números, tercero compruebo que la ultima posicion de dni es una letra, y por ultimo compruebo que la letra es igual que la letra en la posición de el modulo
+        if (nif.length() == 9 && nif.substring(0, 8).matches("[0-9]*") && letra.matches("[A-Za-z]*") && letra.equalsIgnoreCase(String.valueOf(letrasNif.charAt(moduloNif)))) {
+            //Si el if es correcto cambio la variable a true
             nifCorrecto=true;
-            }
+        }
         return nifCorrecto;
-            }
+
+
+    }
 
 }

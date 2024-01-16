@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="masPruebas">
+    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="masPruebasss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tarea3String.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tarea3String.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -354,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705424071007</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="masPruebasss">
+      <option name="closed" value="true" />
+      <created>1705427303219</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1705427303219</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,7 +378,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Continuacion3" />
     <MESSAGE value="Continuacion4" />
     <MESSAGE value="Continuacion5" />
     <MESSAGE value="Fin Evaluacion" />
@@ -394,7 +402,8 @@
     <MESSAGE value="Commit fin" />
     <MESSAGE value="Pruebas" />
     <MESSAGE value="masPruebas" />
-    <option name="LAST_COMMIT_MESSAGE" value="masPruebas" />
+    <MESSAGE value="masPruebasss" />
+    <option name="LAST_COMMIT_MESSAGE" value="masPruebasss" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -403,6 +412,15 @@
           <properties class="java.util.UnknownFormatConversionException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Tarea3String.java</url>
+          <line>8</line>
+          <properties class="Tarea3String" method="esCorrectoNIF">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

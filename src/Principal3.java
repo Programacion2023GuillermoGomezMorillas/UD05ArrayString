@@ -6,7 +6,7 @@ public class Principal3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Dime tu NIF");
         String nif = sc.nextLine();
-        dni.esCorrectoNIF(nif);
+        System.out.println(dni.esCorrectoNIF(nif));
 
     }
 }
