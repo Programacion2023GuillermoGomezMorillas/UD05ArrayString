@@ -61,4 +61,15 @@ public class Tarea3String {
         }
         return fraseInvertida;
     }
+    public int repeticiones(String frase, String palabra ){
+        int cont = 0;
+            //Guardo las letras en la variable a
+            //Condiciono para saber si existe la letra en la listaNegra.
+            //También pongo que todas las letras introducidas sean mayúsculas
+        for (int i=0 ; i<=)
+            if(frase.contains(palabra)){
+                cont++;
+            }
+        return cont;
     }
+}

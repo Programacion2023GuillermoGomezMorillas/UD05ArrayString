@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="quitaEspacios">
+    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="invertir">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tarea3String.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tarea3String.java" afterDir="false" />
@@ -395,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705505147104</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="invertir">
+      <option name="closed" value="true" />
+      <created>1705506092911</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1705506092911</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -410,7 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fin Evaluacion2" />
     <MESSAGE value="inicio Tarea2" />
     <MESSAGE value="inicioTarea2" />
     <MESSAGE value="continuacion" />
@@ -435,7 +442,8 @@
     <MESSAGE value="Pruebas" />
     <MESSAGE value="quitaVocales" />
     <MESSAGE value="quitaEspacios" />
-    <option name="LAST_COMMIT_MESSAGE" value="quitaEspacios" />
+    <MESSAGE value="invertir" />
+    <option name="LAST_COMMIT_MESSAGE" value="invertir" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -455,12 +463,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Tarea3String.java</url>
-          <line>51</line>
-          <properties class="Tarea3String" method="quitaEspaciosSobrantes">
+          <line>56</line>
+          <properties class="Tarea3String" method="invertir">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
