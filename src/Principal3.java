@@ -6,6 +6,6 @@ public class Principal3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Dime una frase" );
         String nif = sc.nextLine();
-        dni.quitaVocales(nif);
+        System.out.println(dni.quitaVocales(nif));
     }
 }

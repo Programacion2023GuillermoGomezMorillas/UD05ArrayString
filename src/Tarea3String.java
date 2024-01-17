@@ -1,6 +1,3 @@
-import java.util.Locale;
-import java.util.Scanner;
-
 public class Tarea3String {
     /**
      * @param nif
@@ -23,23 +20,18 @@ public class Tarea3String {
         return nifCorrecto;
     }
 
-    public void quitaVocales(String frase) {
-       /* String listaNegra="aeiouáéíóúàèìòù";
-        for (int k=0 ; k<listaNegra.length(); k++){
-            if(listaNegra.contains(String.valueOf(frase.charAt(k)))){
-                System.out.println(frase.charAt(k));
+    public StringBuilder quitaVocales(String frase) {
+       String listaNegra="aeiouáéíóúàèìòù";
+       StringBuilder fraseSinVocales= new StringBuilder();
+        for (int k=0 ; k<frase.length(); k++){
+            String a = String.valueOf(frase.charAt(k));
+            if(listaNegra.contains((a.toLowerCase()))){
+                fraseSinVocales.append("");
         }
+            else {
+                fraseSinVocales.append(frase.charAt(k));
             }
-            */
-
-        for (int i = 0; i < frase.length(); i++) {
-            String a = String.valueOf(frase.charAt(i));
-            if (a.equalsIgnoreCase("a") || a.equalsIgnoreCase("e") || a.equalsIgnoreCase("i") || a.equalsIgnoreCase("o") || a.equalsIgnoreCase("u") || a.equalsIgnoreCase("á") || a.equalsIgnoreCase("é") || a.equalsIgnoreCase("í") || a.equalsIgnoreCase("ó") || a.equalsIgnoreCase("ú")) {
-                a="";
-            } else {
-                System.out.print(frase.charAt(i));
-
             }
-        }
+        return fraseSinVocales;
     }
 }
