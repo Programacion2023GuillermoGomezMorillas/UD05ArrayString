@@ -54,4 +54,11 @@ public class Tarea3String {
             String a = frase.replaceAll("\\s","*");
         return a;
     }
+    public StringBuilder invertir(String frase){
+        StringBuilder fraseInvertida = new StringBuilder();
+        for (int i=frase.length()-1 ; i>=0 ; i--){
+            fraseInvertida.append(frase.charAt(i));
+        }
+        return fraseInvertida;
+    }
     }

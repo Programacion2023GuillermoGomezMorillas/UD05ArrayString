@@ -6,6 +6,6 @@ public class Principal3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Dime una frase" );
         String nif = sc.nextLine();
-        System.out.println(dni.quitaEspaciosSobrantes(nif));
+        System.out.println(dni.invertir(nif));
     }
 }
