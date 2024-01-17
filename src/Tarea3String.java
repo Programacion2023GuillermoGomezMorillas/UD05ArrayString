@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Tarea3String {
     /**
      * @param nif
@@ -61,15 +63,18 @@ public class Tarea3String {
         }
         return fraseInvertida;
     }
-    public int repeticiones(String frase, String palabra ){
+    public int repeticiones(String frase, String palabra ) {
         int cont = 0;
-            //Guardo las letras en la variable a
-            //Condiciono para saber si existe la letra en la listaNegra.
-            //También pongo que todas las letras introducidas sean mayúsculas
-        for (int i=0 ; i<=)
-            if(frase.contains(palabra)){
-                cont++;
+        for (int i = 0; i < frase.length(); i++) {
+            String fraseCortada;
+            String primeraLetra = String.valueOf(palabra.charAt(i));
+            if (frase.contains(primeraLetra));{
+                fraseCortada = frase.substring(palabra.length());
+                if (fraseCortada.equalsIgnoreCase(palabra)) {
+                    cont++;
+                }
             }
+        }
         return cont;
     }
 }
