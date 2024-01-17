@@ -20,11 +20,20 @@ public class Tarea3String {
         return nifCorrecto;
     }
 
+    /**
+     * Método para quitar las vocales
+     * @param frase
+     * @return Devuelva un String con la frase sin vocales
+     */
     public StringBuilder quitaVocales(String frase) {
-       String listaNegra="aeiouáéíóúàèìòù";
        StringBuilder fraseSinVocales= new StringBuilder();
+        //Creo un String con las letras que quiero quitar
+       String listaNegra="aeiouáéíóúàèìòù";
+       //Recorre la lista para ver si la frase introducida tiene letras que esten en la variable listaNegra
         for (int k=0 ; k<frase.length(); k++){
+            //Guardo las letras en la variable a
             String a = String.valueOf(frase.charAt(k));
+            //Condiciono para saber si existe la letra en la listaNegra, también pongo que todas las letras introducidas sean mayúsculas
             if(listaNegra.contains((a.toLowerCase()))){
                 fraseSinVocales.append("");
         }
@@ -34,4 +43,15 @@ public class Tarea3String {
             }
         return fraseSinVocales;
     }
-}
+
+    /**
+     * Quita espacios y los sustituye por *
+     * @param frase
+     * @return devuelve el string a, que es la frase sin espacios y con *
+     */
+    public String quitaEspaciosSobrantes(String frase){
+        //Este método de String sustituye todos los espacios, tabulaciones y retornos por *
+            String a = frase.replaceAll("\\s","*");
+        return a;
+    }
+    }
