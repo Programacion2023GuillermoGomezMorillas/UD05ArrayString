@@ -56,8 +56,15 @@ public class Tarea3String {
             String a = frase.replaceAll("\\s","*");
         return a;
     }
+
+    /**
+     *
+     * @param frase
+     * @return Devuelve la frase invertida
+     */
     public StringBuilder invertir(String frase){
         StringBuilder fraseInvertida = new StringBuilder();
+        //Recorre la frase desde atrás hacia delante y va construyendo el string
         for (int i=frase.length()-1 ; i>=0 ; i--){
             fraseInvertida.append(frase.charAt(i));
         }
@@ -65,16 +72,17 @@ public class Tarea3String {
     }
     public int repeticiones(String frase, String palabra ) {
         int cont = 0;
-        for (int i = 0; i < frase.length(); i++) {
-            String fraseCortada;
-            String primeraLetra = String.valueOf(palabra.charAt(i));
-            if (frase.contains(primeraLetra));{
-                fraseCortada = frase.substring(palabra.length());
-                if (fraseCortada.equalsIgnoreCase(palabra)) {
-                    cont++;
-                }
+        //Mientras que la palabra exista el bucle continua
+        while (frase.indexOf(palabra) > -1) {
+            //La frase va eliminando las palabras que les vamos metiendo hasta que no quede ninguna
+            //y al volver al bucle, al no haber ninguna, el valor va a ser -1 y saldrá de él
+            frase = frase.substring(frase.indexOf(palabra)+palabra.length(),frase.length());
+            cont++;
             }
-        }
         return cont;
+        }
+        public int palindromo(){
+
+        }
     }
-}
+
