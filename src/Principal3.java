@@ -6,8 +6,6 @@ public class Principal3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Dime una frase" );
         String nif = sc.nextLine();
-        System.out.println("Dime una palabra" );
-        String palabra = sc.nextLine();
-        System.out.println(dni.repeticiones(nif, palabra));
+        System.out.println(dni.descifrar(nif));
     }
 }
