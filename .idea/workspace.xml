@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="repeticiones">
+    <list default="true" id="968b1fd7-1dbc-42f8-831c-359acba24d5b" name="Changes" comment="pruebas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tarea3String.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tarea3String.java" afterDir="false" />
@@ -427,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705596878155</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="pruebas">
+      <option name="closed" value="true" />
+      <created>1705606951265</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1705606951265</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -465,9 +473,9 @@
     <MESSAGE value="quitaVocales" />
     <MESSAGE value="quitaEspacios" />
     <MESSAGE value="invertir" />
-    <MESSAGE value="pruebas" />
     <MESSAGE value="repeticiones" />
-    <option name="LAST_COMMIT_MESSAGE" value="repeticiones" />
+    <MESSAGE value="pruebas" />
+    <option name="LAST_COMMIT_MESSAGE" value="pruebas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -487,7 +495,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Tarea3String.java</url>
-          <line>91</line>
+          <line>107</line>
           <properties class="Tarea3String" method="cifrar">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

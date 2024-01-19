@@ -136,14 +136,16 @@ public class Tarea3String {
         return textoCifrado;
     }
 
-    public int cuentaCaracteres(String frase) {
-
-        char caracter = ' ';
-
-        for (int i = 0; i < frase.length(); i++) {
-
-            repeticiones(frase, String.valueOf(i));
-
+    public void cuentaCaracteres(String frase) {
+        int contador = 0;
+        System.out.println("Frase: " + frase + "\nResultado:");
+        for (char i = 'a'; i <= 'z'; i++) {
+            contador = repeticiones(frase, String.valueOf(i));
+            if (contador != 0) {
+                System.out.println(i);
+                //System.out.println(frase.charAt(i) + ": " + contador + " vez/veces" );
+            }
         }
     }
 }
+
