@@ -10,6 +10,7 @@ public class Principal2 {
         System.out.println("Cuantas asignaturas tienen?");
         int asignaturas = sc.nextInt();
         System.out.println("Como se llama el grupo?");
+        sc.nextLine();
         String nombreGrupo = sc.nextLine();
         Grupo grupo = new Grupo(nombreGrupo, alumnos, asignaturas);
         int opcion = 1;
@@ -26,7 +27,7 @@ public class Principal2 {
                     System.out.println(grupo.toString());
                     break;
                 case 4:
-                    grupo.mostrarAsignaturas();
+                    System.out.println(grupo.mostrarAsignaturas());
                     break;
                 case 5:
                     System.out.println(grupo.mostrarMedia());
@@ -68,7 +69,7 @@ public class Principal2 {
         Scanner sc = new Scanner(System.in);
         int opc;
         do {
-            System.out.println("1-Leer Notas\n2-Mostrar Notas\n3-Mostrar la Median\n4-Mostrar Maximo y Minimo\n5-Mostrar suspensos y aprobados\n6-Saber mejor y peor alumno\n7-Cambiar una nota de un alumno\n8-Todos los aprobados y suspendidos\n9-Ordena la lista de menor a mayor\n10-Analiza al grupo");
+            System.out.println("1-Nombrar Alumnos\n2-Decir asignatura y poner notas\n3-Mostrar Grupo y Notas\n4-Mostrar Maximo y Minimo\n5-Mostrar suspensos y aprobados\n6-Saber mejor y peor alumno\n7-Cambiar una nota de un alumno\n8-Todos los aprobados y suspendidos\n9-Ordena la lista de menor a mayor\n10-Analiza al grupo");
             opc = sc.nextInt();
         } while (opc < 1 || opc > 13);
         return opc;

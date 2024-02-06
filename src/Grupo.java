@@ -65,16 +65,26 @@ public class Grupo {
     /**
      * Muestra la lista de asignaturas
      */
-    public void mostrarAsignaturas(){
-        System.out.println(Arrays.toString(asignaturas));
-    }
+        public String mostrarAsignaturas() {
+            StringBuilder a = new StringBuilder();
 
-    /**
-     * Sobrecargo el método ToString para mostrar una tabla con el nombre de los alumnos,
-     * las asignaturas y sus notas.
-     * String.format() --> Sirve para poner espaciado
-     * @return
-     */
+            for (int i = 0; i < asignaturas.length; i++) {
+                if (i == asignaturas.length - 1) {
+                    a.append(".");
+                } else {
+                    a.append(asignaturas[i] + ", ");
+
+                }
+            }
+                return a.toString();
+        }
+
+        /**
+         * Sobrecargo el método ToString para mostrar una tabla con el nombre de los alumnos,
+         * las asignaturas y sus notas.
+         * String.format() --> Sirve para poner espaciado
+         * @return
+         */
     @Override
     public String toString() {
         String a ="";
